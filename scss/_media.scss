@@ -1,0 +1,177 @@
+// Tablety
+
+@media (max-width: 800px) {
+	#header-home {
+		height: 30rem;
+
+		.header-content {
+			padding-top: 5rem;
+		}
+	}
+}
+
+// TElefony
+
+@media (max-width: 500px) {
+	#main-nav {
+		flex-direction: column;
+		align-items: center;
+
+		li {
+			padding: 0.5rem;
+		}
+	}
+
+	#header {
+		&-home {
+			height: 10rem;
+			border-bottom: 3px solid $main-color;
+			background-position: 20% 30%;
+
+			.header-content {
+				display: none;
+			}
+		}
+
+		&-inner {
+			height: 10rem;
+		}
+	}
+
+	#home-a .specials,
+	#home-b .stats,
+	#home-c .feedback,
+	#contact-c .process,
+	#contact-b .contact-info,
+	.items {
+		grid-template-columns: 1fr;
+	}
+
+	#home {
+		&-a {
+			.container {
+				.section-title {
+					font-size: 1.1rem;
+				}
+				.lead {
+					font-size: 1rem;
+				}
+			}
+
+			.specials div {
+				border-bottom: 1px $light-color solid;
+				padding-bottom: 1rem;
+
+				&:last-child {
+					border: none;
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		&-b {
+			.stats div {
+				padding: 2rem 0 1rem 0;
+			}
+		}
+
+		&-c {
+			.container {
+				.section-title {
+					font-size: 1.1rem;
+				}
+				.lead {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	#main-footer {
+		height: 7rem;
+
+		.footer-content {
+			flex-direction: column;
+			padding: 1rem;
+			height: 5rem;
+		}
+	}
+
+	#contact {
+		&-a {
+			.text-fields {
+				grid-template-areas:
+					"name"
+					"subject"
+					"email"
+					"phone"
+					"message";
+			}
+		}
+		&-b {
+			div {
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+				border-bottom: 1px #555 solid;
+
+				&:last-child {
+					border: none;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	#timeline ul li div {
+		width: 250px;
+	}
+
+	#timeline ul li:nth-child(even) div {
+		left: -300px;
+	}
+}
+
+@media (max-width: 600px) {
+	#timeline h1 {
+		font-size: 1.2rem;
+	}
+
+	#timeline ul li {
+		margin-left: 20px;
+	}
+
+	#timeline ul li div {
+		width: calc(100vw - 105px);
+	}
+
+	#timeline ul li:nth-child(even) div {
+		left: 40px;
+	}
+
+	#timeline ul li:nth-child(even) div:before {
+		left: -15px;
+		border-width: 8px 16px 8px 0;
+		border-color: transparent $medium-color transparent transparent;
+	}
+}
+
+@media (max-height: 580px) {
+	#header-home {
+		.header-content {
+			padding-top: 3rem;
+		}
+	}
+}
+
+@media (max-height: 330px) {
+	#header-home {
+		.header-content {
+			h1 {
+				font-size: 2rem;
+			}
+		}
+	}
+}
