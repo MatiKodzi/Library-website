@@ -1,5 +1,8 @@
 @import "vars.scss";
 @import "utilities.scss";
+@import "animacje.scss";
+
+
 // Podstawowe stylowanie
 * {
 	margin: 0;
@@ -106,19 +109,17 @@ img {
 			h1 {
 				font-size: 3.5rem;
 				line-height: 1.2;
-				font-weight: 200;
+				font-weight: 500;
 			}
 
-			// .txt-type > .txt {
-			// 	border-right: 0.1rem solid white;
-			// 	animation: miganie 0.2s ease;
-			// }
-
-			.txt-type > .txt::before {
+			span::after {
 				content: "";
-				width: 3px;
-				height: 2rem;
+				height: 0.95em;
+				width: 0.11em;
 				background: white;
+				display: inline-block;
+				transform: translateY(5px);
+				animation: miganie 1s infinite;
 			}
 		}
 	}
@@ -555,3 +556,4 @@ img {
 
 // Responsywność
 @import "media.scss";
+

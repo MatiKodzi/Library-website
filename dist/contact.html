@@ -64,14 +64,16 @@
 			<h2 class="section-title">Contact Us</h2>
 			<div class="bottom-line"></div>
 			<p class="lead">Here is how you can reach us</p>
-			<form>
+			<form method="POST" data-netlify="true" data-netlify-recaptcha="true">
 				<div class="text-fields">
-					<input type="text" class="text-input name-input" placeholder="Name">
-					<input type="text" class="text-input subject-input" placeholder="Subject">
-					<input type="email" class="text-input email-input" placeholder="Email address">
-					<input type="text" class="text-input phone-input" placeholder="Phone Number">
-					<textarea class="text-input message-input" placeholder="Enter Message"></textarea>
-				</div>
+					<input type="text" class="text-input name-input" placeholder="Name" name="name">
+					<input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+					<input type="email" class="text-input email-input" placeholder="Email address" name="email">
+					<input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone">
+					<textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+					<div class="my-2">
+						<div data-netlify-recaptcha="true"></div>
+					</div>
 				<button type="submit"  class="btn-dark">Submit</button>
 			</form>
 		</div>
@@ -101,7 +103,7 @@
 
 	<footer id="main-footer">
 		<div class="footer-content container">
-			<p>Copyright &copy; 2019. All Rights Reserved</p>
+			<p>Copyright &copy; 2021. All Rights Reserved</p>
 			<div class="social">
 				<i class="fab fa-facebook"></i>
 				<i class="fab fa-twitter"></i>

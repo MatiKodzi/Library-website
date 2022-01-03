@@ -69,6 +69,12 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
+@keyframes miganie {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -145,12 +151,15 @@ img {
     #header-home .header-content h1 {
       font-size: 3.5rem;
       line-height: 1.2;
-      font-weight: 200; }
-    #header-home .header-content .txt-type > .txt::before {
+      font-weight: 500; }
+    #header-home .header-content span::after {
       content: "";
-      width: 3px;
-      height: 2rem;
-      background: white; }
+      height: 0.95em;
+      width: 0.11em;
+      background: white;
+      display: inline-block;
+      transform: translateY(5px);
+      animation: miganie 1s infinite; }
 
 #header-inner {
   background: url("../img/showcase.jpeg") no-repeat 20% 10%/cover;
@@ -451,7 +460,11 @@ img {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+      #header-home .header-content h1 {
+        font-size: 2.2rem; }
+      #header-home .header-content .lead {
+        font-size: 0.9rem; } }
 
 @media (max-width: 500px) {
   #main-nav {
