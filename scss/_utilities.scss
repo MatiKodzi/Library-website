@@ -30,6 +30,7 @@
 	&-dark {
 		@extend %btn-shared;
 		color: #f4f4f4;
+		font-size: 3rem;
 		background-color: $dark-color;
 	}
 }
