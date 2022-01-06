@@ -22,7 +22,12 @@
 
 .btn-dark {
   color: #f4f4f4;
+  font-size: 2rem;
   background-color: brown; }
+
+#btn-sbm {
+  width: 100px;
+  height: 50px; }
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
