@@ -33,7 +33,8 @@
 #sbm {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  gap: 6rem; }
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
