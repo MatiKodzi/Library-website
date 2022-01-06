@@ -30,19 +30,21 @@
 	&-dark {
 		@extend %btn-shared;
 		color: #f4f4f4;
-		font-size: 2rem;
 		background-color: $dark-color;
 	}
 }
 
 #btn-sbm {
+	text-align: center;
 	width: 100px;
 	height: 50px;
+	font-size: 1.3rem
 }
 
 #sbm {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 button[class^="btn-"]:hover,
