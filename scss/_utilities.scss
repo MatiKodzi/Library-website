@@ -40,6 +40,11 @@
 	height: 50px;
 }
 
+#sbm {
+	display: flex;
+	flex-direction: column;
+}
+
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
